@@ -2,10 +2,10 @@ package virtualPet;
 
 public class VirtualPet {
 
-//	VirtualPet virtualPet = new VirtualPet("Grendel the Troll");
+	// VirtualPet virtualPet = new VirtualPet("Grendel the Troll");
 
 	public String petName = "Grendel The Troll";
-	
+
 	public void displayStats() {
 		System.out.println("Grendel the Troll");
 		System.out.println("Bloodlust : " + bloodLust);
@@ -24,21 +24,21 @@ public class VirtualPet {
 		bloodLust += 10;
 		health -= 5;
 		trollToll += 5;
-		
+
 		if (health < 0) {
 			System.out.println("You crawl under your bridge and die!");
 			System.exit(0);
 		}
 		if (bloodLust > 50) {
-			System.out.println("You're a monster! You strenghth begins to fade.");
+			System.out.println("You're a monster! Your strenghth begins to fade...");
 			health -= 10;
 		}
-		if(wit > 75) {
+		if (wit > 75) {
 			System.out.println("You use your cunning to collect more tolls.");
-			trollToll += 15; 
+			trollToll += 15;
 		}
-		if(trollToll > 200) {
-			System.out.println("You collected enough tolls to retire!");
+		if (trollToll > 200) {
+			System.out.println("Congratulations! You've collected enough tolls to retire!");
 			System.exit(0);
 		}
 	}
@@ -70,6 +70,11 @@ public class VirtualPet {
 		bloodLust += 10;
 		return bloodLust;
 	}
+	
+	public int getdecreaseBloodLust() {
+		bloodLust -= 10;
+		return bloodLust;
+	}
 
 	public int getincreaseTrollToll() {
 		trollToll += 50;
@@ -85,7 +90,7 @@ public class VirtualPet {
 		health -= 25;
 		return health;
 	}
-	
+
 	public int getincreaseHealth() {
 		health += 25;
 		return health;
@@ -109,7 +114,5 @@ public class VirtualPet {
 		return wit;
 
 	}
-
-
 
 }

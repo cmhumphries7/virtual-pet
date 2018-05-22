@@ -13,20 +13,6 @@ public class VirtualPetApp {
 
 		while (true) {
 
-//			int bloodLust = virtualPet.getBloodLust();
-//			int trollToll = virtualPet.getTrollToll();
-//			int wit = virtualPet.getWit();
-//			int health = virtualPet.getHealth();
-//			int increasedBloodLust = 0;
-//			int increasedTrollToll = 0;
-//			int decreasedHealth = 0;
-//			int decreasedTrollToll = 0;
-//			int increasedWit = 0;
-//			int decreasedWit = 0;
-
-			
-			System.out.println("");
-			virtualPet.displayStats();
 
 			System.out.println("");
 
@@ -64,6 +50,7 @@ public class VirtualPetApp {
 				if (randomNum > 6) {
 					System.out.println("The intruder quickly hands you his change purse.");
 					virtualPet.getincreaseTrollToll();
+					virtualPet.getdecreaseBloodLust();
 				} else {
 					System.out.println(
 							"The intruder pushes you off the bridge and runs past. You drop some of your coins in the river.");
@@ -90,6 +77,8 @@ public class VirtualPetApp {
 				System.out.println("Grendel cooks the intruder for his dinner!");
 				System.exit(0);
 			}
+			System.out.println("");
+			virtualPet.displayStats();
 			virtualPet.tick();
 		}
 

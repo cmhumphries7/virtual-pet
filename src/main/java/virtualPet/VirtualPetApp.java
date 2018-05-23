@@ -13,14 +13,12 @@ public class VirtualPetApp {
 
 		while (true) {
 
-
 			System.out.println("");
 
 			System.out.println("Who dares cross my bridge?? Pay the toll or perish!");
 
 			int selection = 0;
 
-			// while(true) display menu of options
 			while (selection < 1 || selection > 4) {
 				System.out.println("1. Attack intruder.");
 				System.out.println("2. Demand troll toll.");

@@ -2,8 +2,6 @@ package virtualPet;
 
 public class VirtualPet {
 
-	// VirtualPet virtualPet = new VirtualPet("Grendel the Troll");
-
 	public String petName = "Grendel The Troll";
 
 	public void displayStats() {
@@ -16,7 +14,6 @@ public class VirtualPet {
 
 	public int bloodLust = 0;
 	public int trollToll = 0;
-	// use currency for toll
 	public int wit = 50;
 	public int health = 100;
 
@@ -70,7 +67,7 @@ public class VirtualPet {
 		bloodLust += 10;
 		return bloodLust;
 	}
-	
+
 	public int getdecreaseBloodLust() {
 		bloodLust -= 10;
 		return bloodLust;
